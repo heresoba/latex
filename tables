@@ -1,0 +1,129 @@
+\documentclass{article}%\documentclass[UTF8]{ctexart}  
+\usepackage{multirow}
+\usepackage[utf8]{inputenc}
+\usepackage{colortbl}
+\usepackage[table,xcdraw]{xcolor}  %table generator
+\definecolor{gray1}{gray}{.9}
+\definecolor{gray2}{gray}{.7}
+%\definecolor{green}{rgb}{0.5,0.9,0} 
+\definecolor{green}{rgb}{0.67, 0.88, 0.69}
+
+\begin{document}
+
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}  
+\hline  
+\rowcolor{green}
+\multicolumn{4}{|c|}{Holding} & \multicolumn{7}{c|}{Risk} \\ \hline  
+\rowcolor{green}
+Long & Short & Net & Gross &  \$Delta  &   \$Vega  & \$Gamma & Theta & CS01 & VaR & Stress\\ 
+\hline 
+\rowcolor{gray2}
+760,676 & -557,685  & 202,990 & 1,318,361& 47,581  & 2,319 & 21,131 & -25 & -131 & 1,282 & 27,244  \\  
+\hline    
+352,905 & -323,971& 28,934 & 676,875 & 25,214  & 1,970 & 17,537 & -46 & -79 & 1,082 & 31,999  \\
+\hline
+\rowcolor{gray1}
+94,709 & -25,835  & 68,874 & 120,544 & 3,149  & 55 & 31 & 11 & -9 & 191 & -1,459  \\
+\hline
+760,676 & -557,685  & 202,990 & 1,318,361 & 26,344 & 237 & 3,413 & 4 & -19 & 406 & -998  \\
+\hline
+\rowcolor{gray1}
+760,676 & -557,685  & 202,990 & 1,318,361 & -3,867  & 58 & 185 & 1 & -7 & 348 & 1,004  \\
+\hline
+760,676 & -557,685  & 202,990 & 1,318,361 & -41  & -1 & -4 & 3 & -5 & 44 & -2,518  \\
+\hline
+\rowcolor{gray1}
+760,676 & -557,685  & 202,990 & 1,318,361 & -888  & 0 & -9 & 0 & 0 & 330 & 178  \\
+\hline
+760,676 & -557,685  & 202,990 & 1,318,361 & -2,331  & 0 & -23 & 0 & 0 & 611 & 466  \\
+\hline
+\rowcolor{gray1}
+760,676 & -557,685  & 202,990 & 1,318,361 & 0  & 0 & 0 & 1 & -12 & 102 & -1,429  \\
+\hline
+760,676 & -557,685  & 202,990 & 1,318,361 & 0  & 0 & 0 & 0 & 0 & 0 & 0  \\
+\hline
+\rowcolor{gray1}
+760,676 & -557,685  & 202,990 & 1,318,361 & 0  & 0 & 0 & 0 & 0 & 0 & 0  \\
+\hline
+
+\end{tabular}  
+
+\vspace{10mm}
+
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+%\rowcolor{green}
+\multirow{2}{*}{Strategy} &\multirow{2}{*}{NAV}&\multicolumn{3}{|c|}{P\&L} \\
+\cline{3-5}
+ & &50 &100 &150 \\
+%\multirow{2}{*}{Strategy} & \multirow{2}{*}{NAV} & \multicolumn{3}{|c|}{P\&L} \\ 
+\cline{3-5} 
+%\rowcolor{green}
+%\multicolumn{2}{|c|}{}&50&100&150\\
+\hline  
+\rowcolor{gray2}
+Multi-Strategy Fund & 288502 & -75 &  -1274 & 1475  \\
+\hline  
+\multicolumn{2}{|l|}{Multi-Strategy Fund} & -9 &  -1673 & -2661  \\
+\hline  
+\multicolumn{2}{|l|}{Credit strategy} & -9 &  -1673 & -2661  \\
+\hline  
+\multicolumn{2}{|l|}{Equity Directional} & -9 &  -1673 & -2661  \\
+\hline  
+\multicolumn{2}{|l|}{Capital Structure Relative Value} & -9 &  -1673 & -2661  \\
+\hline  
+\multicolumn{2}{|l|}{Equity Directional} & -9 &  -1673 & -2661  \\
+\hline  
+\multicolumn{2}{|l|}{Equity Directional} & -9 &  -1673 & -2661  \\
+\hline  
+\multicolumn{2}{|l|}{Equity Directional} & -9 &  -1673 & -2661  \\
+\hline  
+
+\end{tabular}  
+
+\vspace{10mm}
+
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+%\begin{table}[]
+\centering
+%\caption{test}
+%\label{my-label}
+\begin{tabular}{|c|c|c|c||c|c|c|c|c|c|c|}
+\rowcolor{green}
+%\rowcolor[HTML]{9AFF99} 
+\multicolumn{4}{|c||}{\cellcolor{green}holding} & \multicolumn{7}{c|}{\cellcolor{green}risk} \\
+\rowcolor{green}
+long & short & net & gross & \$delta & \$vega & \$gamma & theta & cs01 & var & stress \\
+\rowcolor[HTML]{C0C0C0} 
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\
+\rowcolor[HTML]{EFEFEF} 
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\
+\end{tabular}
+%\end{table}
+
+
+\centering
+\begin{tabular}{|
+>{\columncolor{gray1}}l|l|c|c|}
+\hline
+\multicolumn{4}{|c|}{\cellcolor[HTML]{FFCC67}Single Asset Net Exposure} \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{9AFF99}Underlying} & \multicolumn{1}{c|}{\cellcolor[HTML]{9AFF99}Strategy} & \cellcolor[HTML]{9AFF99}Net Expo & \cellcolor[HTML]{9AFF99}NAV\% \\ \hline
+FMG AU Equity & VS-NJA-FMG & 26530 & 9.2\% \\ \hline
+1638 HK Equity & CS-NJA-KAISA & 20917 & 7.3\% \\ \hline
+MPEL US Equity & CS-NJA-MELCO & 18685 & 6.5\% \\ \hline
+9508 JP Equity & VA-JAPAN-KYUSHU & 17736 & 6.1\% \\ \hline
+2168 HK Equity & SS-NJA-YINGDE GAS & 15146 & 5.2\% \\ \hline
+1359 HK Equity & CS-NJA-CHINA BANK AT1 & -14742 & -5.1\% \\ \hline
+0533920D SP Equity & SS-NJA-BUMI & 13652 & 4.7\% \\ \hline
+1101 HK Equity & CS-NJA-CHINA BANK AT1 & 12181 & 4.2\% \\ \hline
+6502 JP Equity & CSRV-JAPAN-TOSHIBA & 12024 & 4.2\% \\ \hline
+VOLCAN CI Equity & PL-EMEA-CB & 11585 & 4.0\% \\ \hline
+\multicolumn{2}{|c|}{\cellcolor[HTML]{9AFF99}SUM} & 133687 & 46.3\% \\ \hline
+\end{tabular}
+%\end{table}
+
+
+\end{document}
